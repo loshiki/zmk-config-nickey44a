@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/cormoran
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
   projects:
     - name: zmk
       remote: cormoran
@@ -14,33 +16,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: 8756cb7b8114069fa3c25c6f6c990f24988fceff # v0.3
-  self:
-    path: config
-
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: sekigon-gonnoc
-      url-base: https://github.com/sekigon-gonnoc
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
     - name: zmk-driver-lpps
       remote: sekigon-gonnoc
       revision: master
   self:
     path: config
-
-manifest:
-  remotes:
-    - name: sekigon-gonnoc
-      url-base: https://github.com/sekigon-gonnoc
-  projects:
-    - name: zmk-driver-lpps
-      remote: sekigon-gonnoc
-      revision: master
-
-      
