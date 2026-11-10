@@ -19,5 +19,9 @@ manifest:
     - name: zmk-driver-lpps
       remote: sekigon-gonnoc
       revision: master
+    - name: zmk-driver-kscan-4-direction-switch
+      remote: sekigon-gonnoc
+      revision: master
   self:
     path: config
+    
