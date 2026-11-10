@@ -19,6 +19,23 @@ manifest:
 
 manifest:
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-driver-lpps
+      remote: sekigon-gonnoc
+      revision: master
+  self:
+    path: config
+
+manifest:
+  remotes:
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
   projects:
