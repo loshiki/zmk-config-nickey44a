@@ -24,6 +24,6 @@ manifest:
   projects:
     - name: zmk-driver-lpps
       remote: sekigon-gonnoc
-      revision: main
+      revision: master
 
       
