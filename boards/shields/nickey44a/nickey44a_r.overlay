@@ -16,7 +16,7 @@
             ;
 };
 
-/ {
+{
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "okay";
